@@ -11,7 +11,7 @@ var SITE_CONFIG = {
     nameEn: 'HaessalPay',
     slogan: '따뜻한 햇살처럼 밝은 결제',
     domain: 'sun-pay.kr',
-    year: 2024,
+    year: 2025,
   },
 
   /* ── 연락처 (CTA) ── */
