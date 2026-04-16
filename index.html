@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>햇살페이 — 신용카드 한도를 현금으로</title>
+  <meta name="description" content="신용카드 한도 활용 간편 결제 컨설팅. 무서류, 무방문, 신용점수 영향 없음. 평균 5분 이내 처리. 24시간 전문 매니저.">
+  <meta name="theme-color" content="#1B5E9E">
+  <meta property="og:title" content="햇살페이 — 신용카드 한도를 현금으로">
+  <meta property="og:description" content="신용카드 한도 활용 간편 결제 컨설팅. 평균 5분 이내 처리.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HEADER — 나우페이 스타일 네비
+       ═══════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/logo-icon.png" alt="햇살페이" class="header__logo-img">
+        <span class="header__logo-text">햇살<span class="header__logo-accent">페이</span></span>
+      </a>
+
+      <!-- 데스크톱 메뉴 -->
+      <nav class="header__nav" id="header-nav">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link active">서비스 소개</a></li>
+          <li><a href="product.html" class="header__nav-link">상품 소개</a></li>
+          <li><a href="request.html" class="header__nav-link">문의 방법</a></li>
+          <li><a href="faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="review.html" class="header__nav-link">실제 후기</a></li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 버튼 -->
+      <div class="header__mobile-buttons">
+        <a href="#" class="header__mobile-cta" id="cta-header-kakao" data-cta="kakao" target="_blank" rel="noopener">
+          1초만에 문의하기
+        </a>
+        <button class="header__menu-btn" id="menu-toggle" aria-label="메뉴 열기">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 모바일 풀스크린 메뉴 -->
+    <nav class="header__mobile-nav" id="mobile-nav">
+      <button class="header__close-btn" id="menu-close" aria-label="메뉴 닫기">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="header__mobile-list">
+        <li><a href="index.html">서비스 소개</a></li>
+        <li><a href="product.html">상품 소개</a></li>
+        <li><a href="request.html">문의 방법</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="review.html">실제 후기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       [S1] HERO — 다크 배경 + 비주얼 + 통계바
+       나우페이 스타일: 검은 배경 + 큰 타이틀 + 우측 이미지
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">
+          5분만에 받았는데,<br>
+          <span class="hero__title-highlight">대출이 아니라고?</span>
+        </h1>
+        <p class="hero__subtitle">
+          당신 카드에 숨어있는 한도<br>
+          햇살페이에서 현금으로 입금 받으세요
+        </p>
+      </div>
+      <div class="hero__visual">
+        <img src="assets/images/hero-visual.png" alt="신용카드 현금화 서비스" class="hero__visual-img">
+      </div>
+    </div>
+
+    <!-- 통계 바 (나우페이: 연도/총이용고객/평균시간) -->
+    <div class="hero__stats">
+      <div class="container hero__stats-inner">
+        <div class="hero__stat-item">
+          <span class="hero__stat-number" data-target="2024">0</span><span class="hero__stat-unit">년</span>
+          <span class="hero__stat-label">첫 서비스 개시</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat-item">
+          <span class="hero__stat-number" data-target="1247">0</span><span class="hero__stat-unit">명</span>
+          <span class="hero__stat-label">총 이용고객</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat-item">
+          <span class="hero__stat-number" data-target="5">0</span><span class="hero__stat-unit">분</span>
+          <span class="hero__stat-label">평균 진행 시간</span>
+        </div>
+      </div>
+      <p class="hero__stats-note">* 2025년 4월 기준</p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       [S2] 소개 카드 — "10초만에 알아보는 햇살페이!"
+       나우페이 스타일: 좌측 타이틀 + 우측 4개 카드
+       ═══════════════════════════════════════ -->
+  <section class="intro section" id="intro">
+    <div class="container intro__inner">
+      <div class="intro__text fade-up">
+        <h2 class="intro__title">
+          <span class="intro__title-accent">10초만에 알아보는</span><br>
+          햇살페이 간편결제!
+        </h2>
+        <p class="intro__desc">
+          복잡한 절차 없이<br>
+          카톡 한통으로 써보세요!
+        </p>
+        <a href="product.html" class="btn btn--primary btn--lg">
+          상품 상세설명 <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="intro__cards">
+        <div class="intro__card fade-up">
+          <img src="assets/images/intro-1.png" alt="무서류 무방문" class="intro__card-img">
+          <div class="intro__card-text">
+            <span class="intro__card-label">서류/방문 필요 없음</span>
+            <h3 class="intro__card-title">카톡 한 통이면 끝!<br>무서류·무방문 간편 신청</h3>
+          </div>
+        </div>
+        <div class="intro__card fade-up" style="animation-delay: 0.1s">
+          <img src="assets/images/intro-2.png" alt="5분내 입금" class="intro__card-img">
+          <div class="intro__card-text">
+            <span class="intro__card-label">95% 이상의 승인률</span>
+            <h3 class="intro__card-title">본인 카드만 있다면?<br>신청 후 <i class="fas fa-bolt" style="color:var(--color-accent)"></i> 5분 내 입금!</h3>
+          </div>
+        </div>
+        <div class="intro__card fade-up" style="animation-delay: 0.2s">
+          <img src="assets/images/intro-3.png" alt="24시간 상담" class="intro__card-img">
+          <div class="intro__card-text">
+            <span class="intro__card-label">빠른 입금을 위한</span>
+            <h3 class="intro__card-title">전문 상담원이 24시간 대기!</h3>
+          </div>
+        </div>
+        <div class="intro__card fade-up" style="animation-delay: 0.3s">
+          <img src="assets/images/intro-4.png" alt="무이자 할부" class="intro__card-img">
+          <div class="intro__card-text">
+            <span class="intro__card-label">기대출 상관없이</span>
+            <h3 class="intro__card-title">신청하면 바로 입금돼요!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       [S3] 실시간 진행현황 — 나우페이 테이블 스타일
+       ═══════════════════════════════════════ -->
+  <section class="feed section section--alt" id="live-feed">
+    <div class="container feed__inner">
+      <div class="feed__table-wrap">
+        <!-- 날짜 헤더 -->
+        <div class="feed__date-bar">
+          <i class="fas fa-sync-alt"></i>
+          <span id="feed-date">4월 16일 00:13 기준 이용자</span>
+        </div>
+
+        <!-- 테이블 헤더 -->
+        <div class="feed__table-header">
+          <span class="feed__col feed__col--name">성함</span>
+          <span class="feed__col feed__col--amount">진행금액</span>
+          <span class="feed__col feed__col--status">진행상태</span>
+        </div>
+
+        <!-- 테이블 바디 (JS에서 렌더링) -->
+        <div class="feed__table-body" id="feed-body">
+          <!-- JS에서 site-config.js 데이터로 렌더링 -->
+        </div>
+      </div>
+
+      <div class="feed__info fade-up">
+        <h2 class="feed__title">
+          <span class="feed__title-accent">햇살페이</span> 실시간 진행현황
+        </h2>
+        <p class="feed__desc">
+          햇살페이를 이용한 분들의<br>
+          실시간 진행현황을 확인해보세요!
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       [S4] 신뢰 인증 — "믿고 써도 될까요?"
+       ═══════════════════════════════════════ -->
+  <section class="trust section" id="trust">
+    <div class="container">
+      <h2 class="trust__title fade-up">
+        햇살페이, <span class="trust__title-accent">믿고 써도 될까요?</span>
+      </h2>
+      <p class="trust__desc fade-up">
+        햇살페이는 정식 등록된 사업체로,<br>
+        모든 절차를 합법적으로 진행합니다.
+      </p>
+      <div class="trust__grid" id="trust-grid">
+        <div class="trust__card fade-up">
+          <div class="trust__card-icon"><i class="fas fa-building-columns"></i></div>
+          <h3 class="trust__card-title">정식 PG사 등록</h3>
+          <p class="trust__card-desc">검증된 정식 결제 시스템을 통해<br>모든 거래가 안전하게 처리됩니다.</p>
+        </div>
+        <div class="trust__card fade-up">
+          <div class="trust__card-icon trust__card-icon--gold"><i class="fas fa-shield-halved"></i></div>
+          <h3 class="trust__card-title">SGI 서울보증보험</h3>
+          <p class="trust__card-desc">고객 자산 보호를 위한<br>정식 보증보험에 가입되어 있습니다.</p>
+        </div>
+        <div class="trust__card fade-up">
+          <div class="trust__card-icon trust__card-icon--green"><i class="fas fa-lock"></i></div>
+          <h3 class="trust__card-title">SSL 보안 인증</h3>
+          <p class="trust__card-desc">개인정보 암호화 전송으로<br>정보 유출 걱정이 없습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       [S5] FAQ — 자주 묻는 질문 (간략 버전)
+       ═══════════════════════════════════════ -->
+  <section class="faq section section--alt" id="faq">
+    <div class="container">
+      <h2 class="faq__title fade-up">자주 묻는 질문</h2>
+      <div class="faq__list" id="faq-list">
+        <!-- JS에서 config 기반 렌더링 -->
+      </div>
+      <div class="faq__more fade-up">
+        <a href="faq.html" class="btn btn--outline">전체 FAQ 보기 <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       [S6] 주의사항 + CTA
+       나우페이 스타일: 노란 배경 경고 배너
+       ═══════════════════════════════════════ -->
+  <section class="warning-cta" id="warning-cta">
+    <div class="warning-cta__banner">
+      <div class="container warning-cta__banner-inner">
+        <i class="fas fa-comment-dots warning-cta__icon"></i>
+        <h2 class="warning-cta__title">문의 전 주의하세요!</h2>
+        <p class="warning-cta__desc">
+          최근 햇살페이를 사칭한 업체에서 사기피해를 겪는 분들이 속출하고 있습니다.<br>
+          <strong>절대! 햇살페이는 플러스친구 운영을 하지 않습니다.</strong> 이용에 각별히 주의 부탁드립니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER — 다크 배경, 회사 정보
+       ═══════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner container">
+      <div class="footer__info">
+        <div class="footer__logo">
+          <img src="assets/images/logo-icon.png" alt="햇살페이" class="footer__logo-img">
+          <span class="footer__logo-text">HAESSALPAY</span>
+        </div>
+        <div class="footer__details">
+          <p>상호: 햇살페이</p>
+          <p>연락처: 010-7510-1050</p>
+          <!-- 대표자명, 사업자번호, 주소: config에 보관, 필요 시 표시 -->
+        </div>
+        <div class="footer__details">
+          <p>이용 수수료: 업계 최저 · 상담 시 투명하게 안내</p>
+        </div>
+      </div>
+      <div class="footer__notice">
+        <p>햇살페이는 정식 PG사 등록 업체이며, SGI 서울보증보험에 가입되어 있습니다.</p>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright 햇살페이. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       FLOATING BAR — 나우페이 스타일 좌우 분할
+       ═══════════════════════════════════════ -->
+  <div class="floating" id="floating-bar">
+    <a href="#" class="floating__call" id="cta-float-phone" data-cta="phone">
+      <i class="fas fa-phone"></i>
+      010-7510-1050
+    </a>
+    <a href="#" class="floating__kakao" id="cta-float-kakao" data-cta="kakao" target="_blank" rel="noopener">
+      <i class="fas fa-comment"></i>
+      카톡 상담 <span class="floating__kakao-id">ID: SUNPAY</span>
+    </a>
+  </div>
+
+
+  <!-- Config + Scripts -->
+  <script src="config/site-config.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
