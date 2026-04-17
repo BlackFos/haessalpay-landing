@@ -342,7 +342,65 @@
   justify-content: center;
 }
 
-/* ── Mobile: single column ── */
+/* ── Trust Indicator Bar ── */
+.app-download__trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 20px 32px;
+  margin-bottom: 36px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--shadow-sm);
+}
+.app-download__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+.app-download__trust-item > i {
+  font-size: 20px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+.app-download__trust-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.app-download__trust-text strong {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: 0.875rem;
+  color: var(--color-gray-800);
+  white-space: nowrap;
+}
+.app-download__trust-text span {
+  font-size: 0.75rem;
+  color: var(--color-gray-400);
+  white-space: nowrap;
+}
+.app-download__trust-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--color-gray-200);
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+/* ── Desc strong (법인명 강조) ── */
+.app-download__desc strong {
+  color: var(--color-gray-800);
+  font-weight: var(--fw-bold);
+}
+
+/* ── Mobile ── */
 @media (max-width: 640px) {
   .app-download { padding: 60px 0 40px; }
   .app-download__title { font-size: var(--fs-xl); }
@@ -352,6 +410,21 @@
     max-width: 360px;
   }
   .app-download__card { padding: 32px 24px 28px; }
+  .app-download__trust {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 24px;
+  }
+  .app-download__trust-divider {
+    width: 80%;
+    height: 1px;
+    margin: 0;
+  }
+  .app-download__trust-item {
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 24px;
+  }
 }
 
 
