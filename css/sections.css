@@ -231,6 +231,129 @@
   padding: 0 var(--container-padding);
 }
 
+/* ─────────────────────────────────────────
+   APP DOWNLOAD — Hero 바로 아래 앱 다운로드 섹션
+   ───────────────────────────────────────── */
+.app-download {
+  padding: 80px 0 60px;
+  background: var(--color-section-alt);
+}
+.app-download__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.app-download__badge {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 16px;
+}
+.app-download__title {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-black);
+  font-size: var(--fs-2xl);
+  color: var(--color-gray-900);
+  line-height: var(--lh-snug);
+  margin-bottom: 12px;
+}
+.app-download__title-accent {
+  color: var(--color-primary);
+}
+.app-download__desc {
+  font-size: var(--fs-base);
+  color: var(--color-gray-500);
+  line-height: var(--lh-relaxed);
+}
+
+/* ── Grid: 2-column on desktop ── */
+.app-download__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ── Card ── */
+.app-download__card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 40px 32px 36px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+.app-download__card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ── Card Icon ── */
+.app-download__card-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.app-download__card-icon--android {
+  background: linear-gradient(135deg, #34A853 0%, #0F9D58 100%);
+  color: var(--color-white);
+}
+.app-download__card-icon--ios {
+  background: linear-gradient(135deg, #333 0%, #000 100%);
+  color: var(--color-white);
+}
+
+/* ── Card Text ── */
+.app-download__card-title {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-extrabold);
+  font-size: var(--fs-lg);
+  color: var(--color-gray-900);
+  margin-bottom: 8px;
+}
+.app-download__card-desc {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-500);
+  line-height: var(--lh-relaxed);
+  margin-bottom: 24px;
+}
+
+/* ── Card Buttons ── */
+.app-download__card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app-download__card-buttons .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ── Mobile: single column ── */
+@media (max-width: 640px) {
+  .app-download { padding: 60px 0 40px; }
+  .app-download__title { font-size: var(--fs-xl); }
+  .app-download__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 360px;
+  }
+  .app-download__card { padding: 32px 24px 28px; }
+}
+
 
 /* ─────────────────────────────────────────
    INTRO — 10초만에 알아보는 (NowPay cards)

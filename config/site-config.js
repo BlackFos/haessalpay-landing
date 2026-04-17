@@ -14,6 +14,20 @@ var SITE_CONFIG = {
     year: 2025,
   },
 
+  /* ── 앱 다운로드 ── */
+  app: {
+    android: {
+      storeUrl: '#',       // Play Store 심사 완료 후 URL 교체
+      guideUrl: 'assets/guides/sunshine-pay-android-guide.pdf',
+      label: 'Android 앱',
+    },
+    ios: {
+      storeUrl: '#',       // App Store / TestFlight URL
+      guideUrl: 'assets/guides/sunshine-pay-ios-guide.pdf',
+      label: 'iOS 앱',
+    },
+  },
+
   /* ── 연락처 (CTA) ── */
   contact: {
     kakaoUrl: 'https://open.kakao.com/o/sbPgHyqi',
