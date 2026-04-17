@@ -62,7 +62,7 @@ function animateCounter(el) {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
     const current = Math.round(eased * target);
-    el.textContent = current.toLocaleString();
+    el.textContent = target >= 2000 ? current : current.toLocaleString();
     if (progress < 1) requestAnimationFrame(update);
   }
   requestAnimationFrame(update);
