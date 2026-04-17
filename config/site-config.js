@@ -17,12 +17,12 @@ var SITE_CONFIG = {
   /* ── 앱 다운로드 ── */
   app: {
     android: {
-      storeUrl: '#',       // Play Store 심사 완료 후 URL 교체
+      storeUrl: 'https://play.google.com/store/apps/details?id=com.primeplay.primepay&pcampaignid=web_share',
       guideUrl: 'assets/guides/sunshine-pay-android-guide.pdf',
       label: 'Android 앱',
     },
     ios: {
-      storeUrl: '#',       // App Store / TestFlight URL
+      storeUrl: 'https://apps.apple.com/us/app/primepay/id6757138883',
       guideUrl: 'assets/guides/sunshine-pay-ios-guide.pdf',
       label: 'iOS 앱',
     },
