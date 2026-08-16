@@ -6,12 +6,12 @@ import { SITE } from "../site-data";
 export const metadata: Metadata = {
   title: "문의 방법 | 햇살페이",
   description:
-    "오픈카카오톡 또는 카드 아이콘 전화상담으로 햇살페이에 문의하세요. 365일 24시간 상담합니다.",
+    "오픈카카오톡 또는 전화로 햇살페이에 문의하세요. 365일 24시간 상담합니다.",
 };
 
 const CONTACT_PROCESS = [
-  ["01", "상담 연결", "오픈카카오톡 또는 전화로 연락 주시면 전문 매니저가 즉시 응대합니다."],
-  ["02", "맞춤 안내", "원하시는 금액과 보유 카드를 말씀해 주시면 최적의 수수료와 절차를 안내해 드립니다."],
+  ["01", "상담 연결", "오픈카카오톡 또는 전화로 문의를 남겨 주세요."],
+  ["02", "내용 확인", "원하시는 금액과 보유 카드를 확인한 뒤 수수료와 절차를 안내합니다."],
   ["03", "결제 진행", "안내에 따라 정식 PG사를 통해 신용카드 결제를 진행합니다."],
   ["04", "입금 완료", "결제 확인 후 평균 5분 이내로 고객님 계좌에 입금됩니다."],
 ] as const;
@@ -22,11 +22,11 @@ export default function RequestPage() {
       <PageHero
         eyebrow="문의 안내"
         title="문의 방법"
-        description="편한 방법으로 언제든 연락해 주세요. 24시간 전문 매니저가 대기 중입니다."
+        description="카카오톡이나 전화 중 편한 방법으로 문의해 주세요. 확인하는 순서대로 안내드립니다."
       />
 
       <section className="section">
-        <div className="container contact-method-grid">
+        <div className="container contact-method-grid reveal">
           <article className="contact-method kakao-method">
             <span className="contact-method-index">01</span>
             <div className="contact-method-icon kakao-symbol" aria-hidden="true" />
@@ -58,20 +58,20 @@ export default function RequestPage() {
                 <i />
               </span>
             </div>
-            <span className="section-kicker">전화 상담</span>
-            <h2>전화 상담</h2>
+            <span className="section-kicker">전화 문의</span>
+            <h2>전화로 빠르게 안내받기</h2>
             <p>
-              번호를 크게 노출하지 않는 카드 아이콘형 전화 버튼입니다. 한 번
-              누르면 바로 상담이 시작되어 빠르고 정확한 안내를 받을 수 있습니다.
+              상담 내용을 말로 편하게 확인하고 싶다면 아래 버튼을 눌러 주세요.
+              연결 후 이용 방법과 진행 순서를 안내합니다.
             </p>
             <ul>
-              <li>즉시 연결</li>
-              <li>복잡한 문의에 적합</li>
-              <li>365일 운영</li>
+              <li>통화로 내용 확인</li>
+              <li>진행 순서 안내</li>
+              <li>365일 24시간 상담</li>
             </ul>
             <a href={SITE.phoneHref} className="button button-dark">
               <span className="credit-mini" aria-hidden="true" />
-              전화 연결하기
+              전화로 문의하기
             </a>
           </article>
         </div>
@@ -79,11 +79,11 @@ export default function RequestPage() {
 
       <section className="section section-alt">
         <div className="container">
-          <div className="section-heading">
+          <div className="section-heading reveal">
             <span className="section-kicker">상담 절차</span>
             <h2>상담은 이렇게 진행됩니다</h2>
           </div>
-          <div className="timeline">
+          <div className="timeline reveal">
             {CONTACT_PROCESS.map(([index, title, text]) => (
               <article key={index}>
                 <span>{index}</span>
@@ -98,7 +98,7 @@ export default function RequestPage() {
       </section>
 
       <section className="section contact-safety">
-        <div className="container safety-card">
+        <div className="container safety-card reveal">
           <div className="safety-mark">!</div>
           <div>
             <span className="section-kicker">안전 안내</span>

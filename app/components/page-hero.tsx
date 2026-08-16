@@ -12,7 +12,7 @@ export function PageHero({
   return (
     <section className="sub-hero">
       <div className="sub-hero-sun" aria-hidden="true" />
-      <div className="container sub-hero-inner">
+      <div className="container sub-hero-inner reveal">
         <span className="section-kicker">{eyebrow}</span>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -44,7 +44,7 @@ export function BottomCTA({
 }) {
   return (
     <section className="bottom-cta">
-      <div className="container bottom-cta-inner">
+      <div className="container bottom-cta-inner reveal">
         <div>
           <span>상담 안내</span>
           <h2>{title}</h2>
@@ -61,7 +61,7 @@ export function BottomCTA({
           </a>
           <a href={SITE.phoneHref} className="button button-light">
             <span className="credit-mini" aria-hidden="true" />
-            카드 아이콘 전화상담
+            전화로 문의하기
           </a>
         </div>
       </div>

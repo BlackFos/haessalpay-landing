@@ -13,7 +13,7 @@ const FEATURES = [
   {
     index: "01",
     badge: "무서류 · 무방문",
-    title: "카톡 한 통이면 끝!",
+    title: "간편한 카카오톡 상담",
     text: "복잡한 절차 없이 본인 확인에 필요한 최소 정보만 안내합니다.",
   },
   {
@@ -26,12 +26,12 @@ const FEATURES = [
     index: "03",
     badge: "24시간 상담",
     title: "필요할 때 바로 연결",
-    text: "주말과 공휴일에도 전문 상담원이 365일 24시간 대기합니다.",
+    text: "주말과 공휴일에도 상담 담당자가 365일 24시간 안내합니다.",
   },
   {
     index: "04",
     badge: "투명한 안내",
-    title: "숨겨진 비용 없이",
+    title: "수수료 사전 안내",
     text: "이용 금액에 따른 수수료와 절차를 시작 전에 명확히 안내합니다.",
   },
 ] as const;
@@ -43,7 +43,7 @@ export default function HomePage() {
         <div className="hero-sun hero-sun-one" aria-hidden="true" />
         <div className="hero-sun hero-sun-two" aria-hidden="true" />
         <div className="container hero-inner">
-          <div className="hero-copy">
+          <div className="hero-copy reveal reveal-left">
             <span className="eyebrow">정식 PG사 등록 · 투명한 수수료 안내</span>
             <h1>
               신용카드 한도를
@@ -77,12 +77,34 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hero-visual">
+          <div className="hero-visual reveal reveal-right">
             <div className="hero-art-frame">
               <img
-                src="/visuals/hero-card-consultation-natural.webp"
+                src="/visuals/hero-card-consultation-v2.webp"
                 alt="카드와 휴대폰을 활용한 햇살페이 상담 안내"
+                width="1536"
+                height="1024"
               />
+              <div className="hero-chat-mockup" aria-hidden="true">
+                <div className="hero-chat-head">
+                  <img src="/brand/haessal-mark-v2.png" alt="" />
+                  <span>
+                    <strong>햇살페이</strong>
+                    <small>상담 가능</small>
+                  </span>
+                </div>
+                <div className="hero-chat-body">
+                  <p className="mock-message received">
+                    이용 방법부터 차근차근 안내해 드릴게요.
+                  </p>
+                  <p className="mock-message sent">
+                    진행 전에 수수료도 확인할 수 있나요?
+                  </p>
+                  <p className="mock-message received">
+                    네, 확인 후 먼저 안내드립니다.
+                  </p>
+                </div>
+              </div>
               <div className="hero-art-label">
                 <span>햇살페이 상담</span>
                 <strong>카드 상담부터 진행까지</strong>
@@ -133,13 +155,21 @@ export default function HomePage() {
 
       <section className="section chat-preview">
         <div className="container chat-preview-inner">
-          <div className="chat-preview-visual">
+          <div className="chat-preview-visual reveal reveal-left">
             <img
-              src="/visuals/chat-consultation-natural.webp"
+              src="/visuals/chat-consultation-v2.webp"
               alt="휴대폰으로 상담 내용을 확인하는 모습"
+              width="1120"
+              height="1400"
+              loading="lazy"
             />
+            <div className="chat-message-layer" aria-hidden="true">
+              <p>안녕하세요. 무엇을 도와드릴까요?</p>
+              <p>수수료와 진행 순서부터 알고 싶어요.</p>
+              <span>상담 내용을 확인하고 있습니다</span>
+            </div>
           </div>
-          <div className="chat-preview-copy">
+          <div className="chat-preview-copy reveal reveal-right">
             <span className="section-kicker">카카오톡 상담</span>
             <h2>
               필요한 내용을
@@ -169,7 +199,7 @@ export default function HomePage() {
 
       <section className="section intro-section">
         <div className="container">
-          <div className="section-heading left">
+          <div className="section-heading left reveal">
             <span className="section-kicker">서비스 안내</span>
             <h2>
               간단하게 확인하는
@@ -178,7 +208,7 @@ export default function HomePage() {
             </h2>
             <p>복잡한 절차 없이 카톡 한 통으로 써보세요.</p>
           </div>
-          <div className="feature-grid">
+          <div className="feature-grid reveal">
             {FEATURES.map((item) => (
               <article className="feature-card" key={item.index}>
                 <div className="feature-card-top">
@@ -201,7 +231,7 @@ export default function HomePage() {
 
       <section className="section section-alt recent-section">
         <div className="container recent-grid">
-          <div className="recent-copy">
+          <div className="recent-copy reveal reveal-left">
             <span className="section-kicker">진행 현황</span>
             <h2>
               햇살페이
@@ -214,7 +244,7 @@ export default function HomePage() {
               최근 상담 기준
             </div>
           </div>
-          <div className="case-table">
+          <div className="case-table reveal reveal-right">
             <div className="case-table-head">
               <span>성함</span>
               <span>진행금액</span>
@@ -238,14 +268,14 @@ export default function HomePage() {
 
       <section className="section trust-section">
         <div className="container">
-          <div className="section-heading">
+          <div className="section-heading reveal">
             <span className="section-kicker">안전한 이용</span>
             <h2>햇살페이, 믿고 써도 될까요?</h2>
             <p>
               햇살페이는 정식 등록된 사업체로, 모든 절차를 투명하게 안내합니다.
             </p>
           </div>
-          <div className="trust-grid">
+          <div className="trust-grid reveal">
             {TRUST_ITEMS.map((item) => (
               <article className="trust-card" key={item.index}>
                 <div className="trust-seal">
@@ -262,7 +292,7 @@ export default function HomePage() {
 
       <section className="section reviews-section">
         <div className="container">
-          <div className="section-heading spread">
+          <div className="section-heading spread reveal">
             <div>
               <span className="section-kicker">이용 후기</span>
               <h2>실제 이용후기</h2>
@@ -272,7 +302,7 @@ export default function HomePage() {
               전체 후기 보기
             </a>
           </div>
-          <div className="home-review-grid">
+          <div className="home-review-grid reveal">
             {REVIEWS.slice(0, 3).map((review) => (
               <article className="home-review-card" key={review.name}>
                 <div>
@@ -290,7 +320,7 @@ export default function HomePage() {
 
       <section className="section section-alt home-faq">
         <div className="container">
-          <div className="section-heading">
+          <div className="section-heading reveal">
             <span className="section-kicker">자주 묻는 질문</span>
             <h2>자주 묻는 질문</h2>
             <p>궁금한 점을 빠르게 확인하세요.</p>
@@ -307,11 +337,11 @@ export default function HomePage() {
       </section>
 
       <section className="section warning-section">
-        <div className="container warning-card">
+        <div className="container warning-card reveal">
           <span className="warning-mark">!</span>
           <div>
             <span className="section-kicker">공식 안내</span>
-            <h2>문의 전 주의하세요!</h2>
+            <h2>공식 상담 경로를 확인해 주세요</h2>
             <p>
               최근 햇살페이를 사칭한 업체에서 사기피해를 겪는 분들이 속출하고
               있습니다. <strong>햇살페이는 플러스친구 운영을 하지 않습니다.</strong>

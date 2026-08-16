@@ -12,7 +12,7 @@
 
 ## 연락처
 
-- 전화: `010-6731-0613` — 화면에는 카드 아이콘형 전화상담 CTA로 노출
+- 전화: `010-6731-0613` — 화면에는 번호 대신 전화 문의 CTA로 노출
 - 오픈카카오톡: `https://open.kakao.com/o/sV94R7Ii`
 
 연락처와 공통 데이터는 `app/site-data.ts`에서 관리합니다.
@@ -20,8 +20,8 @@
 ## 생성형 에셋
 
 - `public/brand/haessal-mark-v2.png`
-- `public/visuals/hero-card-consultation-natural.webp`
-- `public/visuals/chat-consultation-natural.webp`
+- `public/visuals/hero-card-consultation-v2.webp`
+- `public/visuals/chat-consultation-v2.webp`
 - `public/og.png`
 - `브랜딩/일상연구소_온도/assets/`
 

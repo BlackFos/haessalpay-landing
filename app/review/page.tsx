@@ -19,7 +19,7 @@ export default function ReviewPage() {
       />
       <section className="section reviews-page">
         <div className="container">
-          <div className="review-summary">
+          <div className="review-summary reveal">
             <div>
               <span>이용 현황</span>
               <strong>4,998+</strong>
@@ -30,7 +30,7 @@ export default function ReviewPage() {
               상담 속도와 조건은 이용 상황에 따라 달라질 수 있습니다.
             </p>
           </div>
-          <div className="reviews-grid">
+          <div className="reviews-grid reveal">
             {REVIEWS.map((review, index) => (
               <article className="review-card" key={review.name}>
                 <div className="review-top">

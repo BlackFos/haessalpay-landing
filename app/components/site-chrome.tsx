@@ -1,24 +1,30 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { NAV_ITEMS, SITE } from "../site-data";
 
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.classList.toggle("mobile-nav-open", open);
+    return () => document.body.classList.remove("mobile-nav-open");
+  }, [open]);
+
   return (
     <>
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" className="brand" aria-label="햇살페이 홈">
+          <Link href="/" className="brand" aria-label="햇살페이 홈">
             <img src="/brand/haessal-mark-v2.png" alt="" className="brand-mark-img" />
             <span className="brand-copy">
               <strong>햇살페이</strong>
               <small>HAESSALPAY</small>
             </span>
-          </a>
+          </Link>
 
           <nav className="desktop-nav" aria-label="주요 메뉴">
             {NAV_ITEMS.map((item) => (
@@ -38,7 +44,7 @@ export function SiteHeader() {
             target="_blank"
             rel="noreferrer"
           >
-            1초 만에 문의
+            상담 시작
           </a>
           <button
             type="button"
@@ -80,13 +86,13 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <a href="/" className="footer-brand">
+          <Link href="/" className="footer-brand">
             <img src="/brand/haessal-mark-v2.png" alt="" />
             <span>
               <strong>햇살페이</strong>
               <small>HAESSALPAY</small>
             </span>
-          </a>
+          </Link>
           <p>{SITE.slogan}</p>
         </div>
         <div className="footer-links">
@@ -102,7 +108,7 @@ export function SiteFooter() {
           <a href={SITE.kakaoUrl} target="_blank" rel="noreferrer">
             오픈카카오톡
           </a>
-          <a href={SITE.phoneHref}>카드 아이콘 전화상담</a>
+          <a href={SITE.phoneHref}>전화 문의</a>
           <span>{SITE.hours}</span>
         </div>
       </div>
@@ -144,6 +150,32 @@ export function FloatingContact() {
 }
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    document.documentElement.classList.add("motion-ready");
+
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      elements.forEach((element) => element.classList.add("is-visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -7% 0px" },
+    );
+
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <SiteHeader />

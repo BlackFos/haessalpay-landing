@@ -13,7 +13,7 @@ const PROCESS = [
   {
     index: "01",
     title: "카카오톡 또는 전화 상담",
-    text: "오픈카카오톡 또는 카드 아이콘 전화상담으로 원하시는 금액과 카드 종류를 말씀해 주세요.",
+    text: "오픈카카오톡 또는 전화로 원하시는 금액과 카드 종류를 말씀해 주세요.",
   },
   {
     index: "02",
@@ -44,7 +44,7 @@ export default function ProductPage() {
       />
 
       <section className="section">
-        <div className="container split-intro">
+        <div className="container split-intro reveal">
           <div>
             <span className="section-kicker">서비스 개요</span>
             <h2>신용카드 결제 서비스란?</h2>
@@ -56,7 +56,7 @@ export default function ProductPage() {
               복잡한 서류 없이 간편하게 이용할 수 있습니다.
             </p>
             <div className="service-note">
-              <span>CHECK</span>
+              <span>확인</span>
               <p>본인 명의 카드와 최소한의 본인 확인 절차가 필요합니다.</p>
             </div>
           </div>
@@ -65,12 +65,12 @@ export default function ProductPage() {
 
       <section className="section section-alt">
         <div className="container">
-          <div className="section-heading">
+          <div className="section-heading reveal">
             <span className="section-kicker">이용 절차</span>
             <h2>간편 이용 절차</h2>
             <p>상담부터 입금까지 필요한 과정만 간결하게 안내합니다.</p>
           </div>
-          <div className="process-grid">
+          <div className="process-grid reveal">
             {PROCESS.map((item) => (
               <article className="process-card" key={item.index}>
                 <span>{item.index}</span>
@@ -84,11 +84,11 @@ export default function ProductPage() {
 
       <section className="section">
         <div className="container">
-          <div className="section-heading">
+          <div className="section-heading reveal">
             <span className="section-kicker">햇살페이의 기준</span>
             <h2>햇살페이가 특별한 이유</h2>
           </div>
-          <div className="benefit-grid">
+          <div className="benefit-grid reveal">
             {BENEFITS.map(([title, text], index) => (
               <article className="benefit-card" key={title}>
                 <span>0{index + 1}</span>
@@ -101,7 +101,7 @@ export default function ProductPage() {
       </section>
 
       <section className="section fee-section">
-        <div className="container fee-card">
+        <div className="container fee-card reveal">
           <div className="fee-label">
             <span>수수료</span>
             <strong>업계 최저</strong>
@@ -122,12 +122,12 @@ export default function ProductPage() {
 
       <section className="section section-alt">
         <div className="container">
-          <div className="section-heading">
+          <div className="section-heading reveal">
             <span className="section-kicker">지원 카드사</span>
             <h2>이용 가능 카드사</h2>
             <p>국내 전 카드사를 지원합니다.</p>
           </div>
-          <div className="card-company-grid">
+          <div className="card-company-grid reveal">
             {CARD_COMPANIES.map((company, index) => (
               <div key={company}>
                 <span className={`company-dot dot-${(index % 3) + 1}`} />
