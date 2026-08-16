@@ -38,7 +38,7 @@ export default function ProductPage() {
   return (
     <SiteShell>
       <PageHero
-        eyebrow="SERVICE GUIDE"
+        eyebrow="서비스 안내"
         title="상품 소개"
         description="햇살페이가 제공하는 신용카드 결제 서비스를 자세히 안내해 드립니다."
       />
@@ -46,7 +46,7 @@ export default function ProductPage() {
       <section className="section">
         <div className="container split-intro">
           <div>
-            <span className="section-kicker">WHAT WE DO</span>
+            <span className="section-kicker">서비스 개요</span>
             <h2>신용카드 결제 서비스란?</h2>
           </div>
           <div className="split-intro-copy">
@@ -66,7 +66,7 @@ export default function ProductPage() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <span className="section-kicker">3 STEPS</span>
+            <span className="section-kicker">이용 절차</span>
             <h2>간편 이용 절차</h2>
             <p>상담부터 입금까지 필요한 과정만 간결하게 안내합니다.</p>
           </div>
@@ -85,7 +85,7 @@ export default function ProductPage() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <span className="section-kicker">WHY HAESSALPAY</span>
+            <span className="section-kicker">햇살페이의 기준</span>
             <h2>햇살페이가 특별한 이유</h2>
           </div>
           <div className="benefit-grid">
@@ -103,7 +103,7 @@ export default function ProductPage() {
       <section className="section fee-section">
         <div className="container fee-card">
           <div className="fee-label">
-            <span>FEE</span>
+            <span>수수료</span>
             <strong>업계 최저</strong>
           </div>
           <div>
@@ -123,7 +123,7 @@ export default function ProductPage() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <span className="section-kicker">ALL CARDS</span>
+            <span className="section-kicker">지원 카드사</span>
             <h2>이용 가능 카드사</h2>
             <p>국내 전 카드사를 지원합니다.</p>
           </div>

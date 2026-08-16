@@ -13,7 +13,7 @@ export function SiteHeader() {
       <header className="site-header">
         <div className="container header-inner">
           <a href="/" className="brand" aria-label="햇살페이 홈">
-            <img src="/brand/haessal-mark.png" alt="" className="brand-mark-img" />
+            <img src="/brand/haessal-mark-v2.png" alt="" className="brand-mark-img" />
             <span className="brand-copy">
               <strong>햇살페이</strong>
               <small>HAESSALPAY</small>
@@ -81,7 +81,7 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div>
           <a href="/" className="footer-brand">
-            <img src="/brand/haessal-mark.png" alt="" />
+            <img src="/brand/haessal-mark-v2.png" alt="" />
             <span>
               <strong>햇살페이</strong>
               <small>HAESSALPAY</small>

@@ -44,7 +44,7 @@ export default function HomePage() {
         <div className="hero-sun hero-sun-two" aria-hidden="true" />
         <div className="container hero-inner">
           <div className="hero-copy">
-            <span className="eyebrow">✦ 정식 PG사 등록 · 투명한 수수료 안내</span>
+            <span className="eyebrow">정식 PG사 등록 · 투명한 수수료 안내</span>
             <h1>
               신용카드 한도를
               <br />
@@ -80,19 +80,19 @@ export default function HomePage() {
           <div className="hero-visual">
             <div className="hero-art-frame">
               <img
-                src="/visuals/hero-card-to-cash.webp"
-                alt="신용카드에서 현금으로 이어지는 햇살페이 상담 과정"
+                src="/visuals/hero-card-consultation-natural.webp"
+                alt="카드와 휴대폰을 활용한 햇살페이 상담 안내"
               />
               <div className="hero-art-label">
-                <span>HAESSALPAY</span>
-                <strong>카드 → 상담 → 빠른 진행</strong>
+                <span>햇살페이 상담</span>
+                <strong>카드 상담부터 진행까지</strong>
               </div>
             </div>
             <div className="hero-mini-proof">
-              <img src="/brand/haessal-mark.png" alt="" />
+              <img src="/brand/haessal-mark-v2.png" alt="" />
               <span>
                 <small>현재 상담 상태</small>
-                <strong>● 바로 상담 가능</strong>
+                <strong>바로 상담 가능</strong>
               </span>
             </div>
           </div>
@@ -134,24 +134,21 @@ export default function HomePage() {
       <section className="section chat-preview">
         <div className="container chat-preview-inner">
           <div className="chat-preview-visual">
-            <div className="chat-phone-aura" aria-hidden="true" />
-            <img src="/visuals/chat-phone.webp" alt="햇살페이 카카오톡 상담 목업" />
-            <div className="chat-overlay">
-              <p>안녕하세요. 햇살페이입니다 ☀</p>
-              <p>상담받고 싶어요.</p>
-              <p>가능한 한도부터 빠르게 확인해 드릴게요.</p>
-            </div>
+            <img
+              src="/visuals/chat-consultation-natural.webp"
+              alt="휴대폰으로 상담 내용을 확인하는 모습"
+            />
           </div>
           <div className="chat-preview-copy">
-            <span className="section-kicker light">REAL-TIME CARE</span>
+            <span className="section-kicker">카카오톡 상담</span>
             <h2>
-              카톡 한 통이면
+              필요한 내용을
               <br />
-              <em>바로 상담 시작!</em>
+              <em>차근차근 안내합니다</em>
             </h2>
             <p>
-              복잡한 절차 없이 카카오톡으로 실시간 전문 상담을 받아보세요.
-              필요한 내용만 순서대로 안내합니다.
+              카카오톡으로 문의를 남기면 상담에 필요한 내용과 진행 순서를
+              담당자가 확인해 안내합니다.
             </p>
             <ul className="check-list">
               <li>365일 24시간 상담</li>
@@ -173,9 +170,9 @@ export default function HomePage() {
       <section className="section intro-section">
         <div className="container">
           <div className="section-heading left">
-            <span className="section-kicker">10-SECOND GUIDE</span>
+            <span className="section-kicker">서비스 안내</span>
             <h2>
-              10초 만에 알아보는
+              간단하게 확인하는
               <br />
               햇살페이 간편결제
             </h2>
@@ -196,7 +193,7 @@ export default function HomePage() {
           </div>
           <div className="center-button">
             <a href="/product" className="button button-dark">
-              상품 상세설명 <span aria-hidden="true">→</span>
+              상품 상세설명
             </a>
           </div>
         </div>
@@ -205,7 +202,7 @@ export default function HomePage() {
       <section className="section section-alt recent-section">
         <div className="container recent-grid">
           <div className="recent-copy">
-            <span className="section-kicker">RECENT STATUS</span>
+            <span className="section-kicker">진행 현황</span>
             <h2>
               햇살페이
               <br />
@@ -242,7 +239,7 @@ export default function HomePage() {
       <section className="section trust-section">
         <div className="container">
           <div className="section-heading">
-            <span className="section-kicker">TRUST STANDARD</span>
+            <span className="section-kicker">안전한 이용</span>
             <h2>햇살페이, 믿고 써도 될까요?</h2>
             <p>
               햇살페이는 정식 등록된 사업체로, 모든 절차를 투명하게 안내합니다.
@@ -267,12 +264,12 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading spread">
             <div>
-              <span className="section-kicker">CUSTOMER STORIES</span>
+              <span className="section-kicker">이용 후기</span>
               <h2>실제 이용후기</h2>
               <p>햇살페이를 선택한 고객들의 이용 후기입니다.</p>
             </div>
             <a href="/review" className="text-link">
-              전체 후기 보기 <span>→</span>
+              전체 후기 보기
             </a>
           </div>
           <div className="home-review-grid">
@@ -281,7 +278,7 @@ export default function HomePage() {
                 <div>
                   <span className="review-avatar">{review.name[0]}</span>
                   <strong>{review.name}</strong>
-                  <small>★★★★★</small>
+                  <small>평점 5.0</small>
                 </div>
                 <p>{review.text}</p>
                 <span className="review-meta">{review.meta}</span>
@@ -294,7 +291,7 @@ export default function HomePage() {
       <section className="section section-alt home-faq">
         <div className="container">
           <div className="section-heading">
-            <span className="section-kicker">FAQ</span>
+            <span className="section-kicker">자주 묻는 질문</span>
             <h2>자주 묻는 질문</h2>
             <p>궁금한 점을 빠르게 확인하세요.</p>
           </div>
@@ -303,7 +300,7 @@ export default function HomePage() {
           </div>
           <div className="center-button">
             <a href="/faq" className="button button-card">
-              전체 FAQ 보기 <span aria-hidden="true">→</span>
+              전체 FAQ 보기
             </a>
           </div>
         </div>
@@ -313,7 +310,7 @@ export default function HomePage() {
         <div className="container warning-card">
           <span className="warning-mark">!</span>
           <div>
-            <span className="section-kicker">OFFICIAL NOTICE</span>
+            <span className="section-kicker">공식 안내</span>
             <h2>문의 전 주의하세요!</h2>
             <p>
               최근 햇살페이를 사칭한 업체에서 사기피해를 겪는 분들이 속출하고

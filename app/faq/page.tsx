@@ -13,14 +13,14 @@ export default function FAQPage() {
   return (
     <SiteShell>
       <PageHero
-        eyebrow="FAQ"
+        eyebrow="자주 묻는 질문"
         title="자주 묻는 질문"
         description="햇살페이 이용에 대해 궁금한 점을 빠르게 확인해 보세요."
       />
       <section className="section">
         <div className="container faq-page-grid">
           <div className="faq-page-aside">
-            <span className="section-kicker">HELP CENTER</span>
+            <span className="section-kicker">문의 안내</span>
             <h2>필요한 답변을<br />한눈에 찾으세요</h2>
             <p>찾으시는 답변이 없다면 오픈카카오톡이나 전화로 편하게 문의해 주세요.</p>
           </div>

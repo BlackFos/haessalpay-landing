@@ -29,9 +29,9 @@ export async function generateMetadata(): Promise<Metadata> {
       "24시간 상담",
     ],
     icons: {
-      icon: "/brand/favicon.png",
-      shortcut: "/brand/favicon.png",
-      apple: "/brand/haessal-mark.png",
+      icon: "/brand/favicon-v2.png",
+      shortcut: "/brand/favicon-v2.png",
+      apple: "/brand/haessal-mark-v2.png",
     },
     openGraph: {
       title,

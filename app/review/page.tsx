@@ -13,7 +13,7 @@ export default function ReviewPage() {
   return (
     <SiteShell>
       <PageHero
-        eyebrow="CUSTOMER STORIES"
+        eyebrow="이용 후기"
         title="실제 후기"
         description="햇살페이를 이용하신 고객님들의 실제 후기를 확인해 보세요."
       />
@@ -21,7 +21,7 @@ export default function ReviewPage() {
         <div className="container">
           <div className="review-summary">
             <div>
-              <span>REVIEW NOTE</span>
+              <span>이용 현황</span>
               <strong>4,998+</strong>
               <p>햇살페이 누적 이용자</p>
             </div>
@@ -37,7 +37,7 @@ export default function ReviewPage() {
                   <span className="review-avatar">{review.name[0]}</span>
                   <div>
                     <strong>{review.name}</strong>
-                    <span>★★★★★</span>
+                    <span>평점 5.0</span>
                   </div>
                   <small>0{index + 1}</small>
                 </div>

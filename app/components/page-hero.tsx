@@ -46,7 +46,7 @@ export function BottomCTA({
     <section className="bottom-cta">
       <div className="container bottom-cta-inner">
         <div>
-          <span>HAESSALPAY CARE</span>
+          <span>상담 안내</span>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>

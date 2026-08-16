@@ -20,7 +20,7 @@ export default function RequestPage() {
   return (
     <SiteShell>
       <PageHero
-        eyebrow="CONTACT"
+        eyebrow="문의 안내"
         title="문의 방법"
         description="편한 방법으로 언제든 연락해 주세요. 24시간 전문 매니저가 대기 중입니다."
       />
@@ -30,7 +30,7 @@ export default function RequestPage() {
           <article className="contact-method kakao-method">
             <span className="contact-method-index">01</span>
             <div className="contact-method-icon kakao-symbol" aria-hidden="true" />
-            <span className="section-kicker">OPEN KAKAO</span>
+            <span className="section-kicker">오픈카카오톡</span>
             <h2>카카오톡 상담</h2>
             <p>
               햇살페이 오픈카카오톡으로 바로 상담을 시작하세요. 사진과
@@ -58,7 +58,7 @@ export default function RequestPage() {
                 <i />
               </span>
             </div>
-            <span className="section-kicker">CARD ICON CALL</span>
+            <span className="section-kicker">전화 상담</span>
             <h2>전화 상담</h2>
             <p>
               번호를 크게 노출하지 않는 카드 아이콘형 전화 버튼입니다. 한 번
@@ -80,7 +80,7 @@ export default function RequestPage() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <span className="section-kicker">HOW IT WORKS</span>
+            <span className="section-kicker">상담 절차</span>
             <h2>상담은 이렇게 진행됩니다</h2>
           </div>
           <div className="timeline">
@@ -101,7 +101,7 @@ export default function RequestPage() {
         <div className="container safety-card">
           <div className="safety-mark">!</div>
           <div>
-            <span className="section-kicker">SAFETY NOTICE</span>
+            <span className="section-kicker">안전 안내</span>
             <h2>공식 링크를 꼭 확인해 주세요</h2>
             <p>
               최근 햇살페이를 사칭한 업체에서 사기피해를 겪는 분들이 속출하고

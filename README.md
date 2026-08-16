@@ -19,13 +19,13 @@
 
 ## 생성형 에셋
 
-- `public/brand/haessal-mark.png`
-- `public/visuals/hero-card-to-cash.webp`
-- `public/visuals/chat-phone.webp`
+- `public/brand/haessal-mark-v2.png`
+- `public/visuals/hero-card-consultation-natural.webp`
+- `public/visuals/chat-consultation-natural.webp`
 - `public/og.png`
 - `브랜딩/일상연구소_온도/assets/`
 
-이미지 원본은 생성형 이미지로 제작하고 웹 표시 크기에 맞춰 압축했습니다.
+이미지 원본은 자연광 기반의 실제 촬영 스타일로 제작하고 웹 표시 크기에 맞춰 압축했습니다. 사이트 서체는 위고페이와 동일한 Pretendard Variable 1.3.9를 로컬 파일로 사용합니다.
 
 ## 개발
 
