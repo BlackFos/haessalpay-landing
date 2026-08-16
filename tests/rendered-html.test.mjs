@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 const routes = [
-  ["/", "햇살페이", "신용카드 한도를"],
+  ["/", "햇살페이", "모든 금융 문의를"],
   ["/product", "상품 소개", "간편 이용 절차"],
   ["/request", "문의 방법", "카카오톡 상담"],
   ["/faq", "자주 묻는 질문", "신용카드만 있으면 누구나"],

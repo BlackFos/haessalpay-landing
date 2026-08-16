@@ -13,9 +13,9 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.includes("localhost") ? "http" : "https");
   const origin = `${protocol}://${host}`;
-  const title = "햇살페이 | 따뜻한 햇살처럼 밝은 결제";
+  const title = "햇살페이 | 대출·소액결제·콘텐츠 통합 상담";
   const description =
-    "신용카드 한도 상담부터 빠른 진행까지. 투명한 수수료와 365일 24시간 상담을 제공하는 햇살페이입니다.";
+    "모든 대출, 소액결제, 상품권, 콘텐츠 관련 문의를 한곳에서 친절히 상담합니다. 저신용 고객도 현재 상황에 맞춰 상담받을 수 있습니다.";
 
   return {
     metadataBase: new URL(origin),
@@ -23,8 +23,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     keywords: [
       "햇살페이",
-      "신용카드 결제",
-      "카드 한도",
+      "대출 상담",
+      "저신용 상담",
+      "소액결제",
+      "상품권 상담",
+      "콘텐츠 상담",
       "빠른 상담",
       "24시간 상담",
     ],
