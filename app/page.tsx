@@ -44,18 +44,16 @@ export default function HomePage() {
         <div className="hero-sun hero-sun-two" aria-hidden="true" />
         <div className="container hero-inner">
           <div className="hero-copy reveal reveal-left">
-            <span className="eyebrow">
-              모든 대출 · 소액결제 · 상품권 · 콘텐츠
-            </span>
+            <span className="eyebrow">정식 PG사 등록 · 투명한 수수료 안내</span>
             <h1>
-              모든 금융 문의를
+              신용카드 한도를
               <br />
-              <em>친절히 상담합니다</em>
+              <em>현금으로</em>
             </h1>
             <p>
-              다양한 금융 문의를 한곳에서 편하게 상담하세요.
+              {SITE.slogan}.
               <br />
-              저신용 고객도 상담 가능하며, 신용 관리 방향을 함께 살펴드립니다.
+              복잡한 서류 없이 평균 5분 내 빠르게 안내해 드립니다.
             </p>
             <div className="hero-actions">
               <a
@@ -73,9 +71,13 @@ export default function HomePage() {
               </a>
             </div>
             <div className="hero-proof">
-              <span>저신용 고객 상담 가능</span>
+              <span>365일 24시간</span>
               <i />
-              <span>신용 상황별 맞춤 안내</span>
+              <span>본인 확인 후 빠른 진행</span>
+            </div>
+            <div className="hero-scope">
+              <span>모든 대출 · 소액결제 · 상품권 · 콘텐츠</span>
+              <strong>저신용 · 신용도 향상 상담 가능</strong>
             </div>
           </div>
 
@@ -83,7 +85,7 @@ export default function HomePage() {
             <div className="hero-art-frame">
               <img
                 src="/visuals/hero-card-consultation-v2.webp"
-                alt="카드와 휴대폰을 활용한 햇살페이 통합 상담 안내"
+                alt="카드와 휴대폰을 활용한 햇살페이 상담 안내"
                 width="1536"
                 height="1024"
               />
@@ -97,19 +99,19 @@ export default function HomePage() {
                 </div>
                 <div className="hero-chat-body">
                   <p className="mock-message received">
-                    필요한 상품을 편하게 말씀해 주세요.
+                    이용 방법부터 차근차근 안내해 드릴게요.
                   </p>
                   <p className="mock-message sent">
-                    저신용인데도 상담할 수 있나요?
+                    진행 전에 수수료도 확인할 수 있나요?
                   </p>
                   <p className="mock-message received">
-                    네, 현재 상황부터 함께 확인해 드립니다.
+                    네, 확인 후 먼저 안내드립니다.
                   </p>
                 </div>
               </div>
               <div className="hero-art-label">
-                <span>햇살페이 통합 상담</span>
-                <strong>대출·소액결제·콘텐츠</strong>
+                <span>햇살페이 상담</span>
+                <strong>카드 상담부터 진행까지</strong>
               </div>
             </div>
             <div className="hero-mini-proof">

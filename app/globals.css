@@ -466,6 +466,27 @@ p {
   border-radius: 50%;
 }
 
+.hero-scope {
+  max-width: 470px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 13px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(15, 25, 35, 0.1);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.hero-scope span {
+  color: #68727d;
+}
+
+.hero-scope strong {
+  color: var(--orange-dark);
+}
+
 .hero-visual {
   position: relative;
   padding-bottom: 18px;
@@ -2176,6 +2197,12 @@ p {
     justify-content: center;
   }
 
+  .hero-scope {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero-visual {
     width: min(730px, 100%);
     margin: 0 auto 25px;
@@ -2251,6 +2278,10 @@ p {
 
   .hero-mini-proof {
     right: 8px;
+  }
+
+  .hero-scope {
+    font-size: 12px;
   }
 
   .quick-links-inner {
